@@ -1,0 +1,1 @@
+This project is written with object orientation and "Pandas" library, and the main file of the project "main.py" and "phoneBook.py" is the file of classes, attributes and methods, and the contact information is stored in the json file.

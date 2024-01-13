@@ -18,8 +18,10 @@ class PhoneBook:
         self.send_data_to_json()
 
     def show_phonebook(self):
-        print(self.phonebook.to_string(index=False))
+        print(self.phonebook.to_string(index=False, col_space=50))
 
     def delete_phonebook(self, name):
         self.phonebook = self.phonebook.drop(self.phonebook[self.phonebook['name'] == name].index)
         self.send_data_to_json()
+    def help_phonebook(self):
+        print("\n show : show the phonebook \n add : add a phone number \n delete : delete the phone number \n exit : exit the program")
